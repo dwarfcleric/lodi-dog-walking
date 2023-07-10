@@ -1,0 +1,45 @@
+---
+layout: default
+images:
+  - path: /assets/images/20200717_130320.jpg
+  - path: /assets/images/20200810_160856.jpg
+  - path: /assets/images/20200919_132638.jpg
+  - path: /assets/images/20201224_155858.jpg
+  - path: /assets/images/20201224_160100.jpg
+  - path: /assets/images/20201225_105743.jpg
+  - path: /assets/images/20201225_105750.jpg
+  - path: /assets/images/20210308_125228.jpg
+  - path: /assets/images/20210309_102608.jpg
+  - path: /assets/images/20210318_101445.jpg
+  - path: /assets/images/20210321_144739.jpg
+  - path: /assets/images/20210325_102529.jpg
+  - path: /assets/images/20210407_130926.jpg
+  - path: /assets/images/20210408_130720.jpg
+  - path: /assets/images/20210415_131741.jpg
+  - path: /assets/images/20210518_130006.jpg
+  - path: /assets/images/20210610_130608.jpg
+  - path: /assets/images/20210614_100423.jpg
+  - path: /assets/images/20210715_125321.jpg
+---
+<div class="container">
+  <div class="row g-5 py-5 rounded-3 border shadow-lg">
+    <h1>Photos</h1>
+    <div id="carouselDogPhotos" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        {% for img in page.images %}
+        <div class="carousel-item active">
+          <img src="{{img.path}}" class="d-block img-fluid" alt="...">
+        </div>
+        {% endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDogPhotos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDogPhotos" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>  
+</div>
